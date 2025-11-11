@@ -1,0 +1,7 @@
+{
+  "name": "receipt-ocr",
+  "version": "1.0.0",
+  "dependencies": {
+    "aliyun-sdk": "^2.3.0"
+  }
+}
