@@ -1,8 +1,16 @@
 {
   "name": "receipt-ocr",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@alicloud/ocr20191230": "^1.0.1",
+    "@alicloud/ocr20191230": "^2.0.0",
     "@alicloud/openapi-client": "^0.4.8",
     "@alicloud/tea-util": "^1.4.7",
     "tablestore": "^5.0.7"

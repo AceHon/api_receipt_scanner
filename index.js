@@ -1,4 +1,4 @@
-const OCR = require('@alicloud/ocr20191230');
+const OCR = require('@alicloud/ocr20191230'); // Import for v2.x or v3.x
 const OpenApi = require('@alicloud/openapi-client');
 const Util = require('@alicloud/tea-util');
 const TableStore = require('tablestore');
@@ -104,7 +104,7 @@ module.exports.handler = async (req, res) => {
 
       // 1. Call OCR
       const recognizeReceiptRequest = new OCR.RecognizeReceiptRequest({
-        image: image  // ← Changed from imageURL to image
+        image: image  // Use 'image' for Base64 string
       });
 
       const ocrResponse = await ocrClient.recognizeReceipt(recognizeReceiptRequest);
